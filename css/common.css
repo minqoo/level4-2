@@ -1,0 +1,278 @@
+/* reset CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size: 100%; */
+    font-size: 62.5%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  color: #555555;
+  font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ',
+    sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+
+/* common */
+.inner{
+    max-width: 100%;
+  padding: 0 150px;
+  margin: 0 auto;
+}
+.narrow{
+      max-width: 100%;
+  padding: 0 290px;
+  margin: 0 auto;
+}
+.ttl{
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+@media screen and (max-width: 979px){
+.inner{
+    padding: 0 40px;
+}
+.narrow{
+    padding: 0 4rem;
+}
+}
+
+@media screen and (max-width: 767px) {
+.inner{
+    padding: 0 15px;
+}
+.narrow{
+    padding: 0 1.5rem;
+}
+.ttl{
+  margin-top: 8rem;
+}
+}
+
+
+/* component */
+.btn-wrapper{
+  position: relative;
+  width: 17.5rem;
+  height: 5rem;
+  margin-top: 4rem;
+  border-radius: 25px;
+
+}
+.btn-link{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+white-space: nowrap;
+}
+
+
+@media screen and (max-width: 979px){
+
+}
+
+@media screen and (max-width: 767px) {
+.btn-wrapper{
+  width: 17.5rem;
+  height: 4.5rem;
+margin: 2rem auto 0;
+}
+
+}
+
+/* other */
+.anchor{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+.brpc {
+  display: block;
+}
+
+@media screen and (max-width: 979px){
+
+}
+
+@media screen and (max-width: 767px) {
+ .brpc {
+    display: none;
+  }
+  .anchor{
+    display: block;
+    padding-top: 110px;
+    margin-top: -110px;
+}
+  
+}
+
